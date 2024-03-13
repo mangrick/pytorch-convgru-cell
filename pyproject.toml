@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "torch"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytorch-convgru-cell"
+description = "A reimplementation of the GRU-RCN layer for PyTorch as a C++ extension."
+version = "1.0.0"
+requires-python = ">3.10"
+dependencies = ["numpy", "torchinfo", "torch"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tmp*"]
+namespaces = false
